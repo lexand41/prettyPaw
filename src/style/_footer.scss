@@ -1,0 +1,39 @@
+.footer {
+
+  &__container {}
+
+  &__logo {
+    width: 200px;
+    margin-bottom: 32px;
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 52px;
+  }
+
+  &__social-item {
+    width: 36px;
+    height: 36px;
+  }
+
+  &__social-link {}
+
+  &__developers {
+    margin-bottom: 52px;
+  }
+
+  &__developer {
+    color: $main;
+    margin-bottom: 16px;
+    line-height: 1;
+  }
+
+  &__copyright {
+    color: $main;
+    padding-bottom: 30px;
+    line-height: 1;
+  }
+}
+
