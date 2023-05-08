@@ -64,11 +64,11 @@
     }
   }
 
-  &__slider { 
+  &__slider {
+    overflow: hidden;
   }
 
   &__image-list {
- 
   }
 
   &__image-item {
@@ -78,15 +78,9 @@
 
     @include md {
       &:nth-child(even) {
-        transform: scale(0.7);
+        transform: scale(0.85);
         transition: 0.5s;
       }
-    }
-
-    @include xl {
-      &:nth-child(odd) {
-        width: 27.5%;
-      }     
     }
   }
 
