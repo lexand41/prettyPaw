@@ -14,6 +14,32 @@ slidersInit('.about__slider', {
   }
 });
 
+
+slidersInit('.career__slider', {
+  pagination: {
+    el: '.career__slider-pagination'
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 1,
+      pagination: false,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 1,
+      pagination: false,
+    },
+    1240: {
+      slidesPerView: 4,
+      spaceBetween: 1,
+      pagination: false,
+    }
+  }
+});
+
+
+
 const videoBG = document.querySelector('.video-bg');
 
 videoBG.innerHTML = `

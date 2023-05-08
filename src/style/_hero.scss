@@ -32,6 +32,8 @@
   }
 
   @include xxl {
+    max-width: 2560px;
+    margin: 0 auto;
     background-image: url('../img/poster-xl@4x.jpg');
     background-image: image-set(
     url('../img/poster-xl@4x.webp') 4x,
@@ -61,6 +63,7 @@
     @include xxl {
       min-height: 100vh;
     }
+
   }
 
   &__title {
@@ -97,7 +100,8 @@
   }
 
   &__video-bg {
-    z-index: 8;
+    z-index: 3;
+
   }
 }
 

@@ -11,10 +11,20 @@
     padding: 30px;
   }
 
+  @include xxl {
+    max-width: 2560px;
+    margin: 0 auto;
+  }
+
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include xxl {
+      max-width: 2560px;
+      margin: 0 auto;
+    }
   }
 
   &__logo {
