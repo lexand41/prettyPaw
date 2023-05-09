@@ -11,10 +11,10 @@
     padding: 30px;
   }
 
-  @include xxl {
-    max-width: 2560px;
-    margin: 0 auto;
-  }
+  // @include xxl {
+  //   max-width: 2560px;
+  //   margin: 0 auto;
+  // }
 
   &__container {
     display: flex;
@@ -34,8 +34,6 @@
       width: 360px;
     }
   }
-
-  &__nav {}
 }
 
 

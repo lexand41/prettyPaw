@@ -32,13 +32,13 @@
   }
 
   @include xxl {
-    max-width: 2560px;
-    margin: 0 auto;
     background-image: url('../img/poster-xl@4x.jpg');
     background-image: image-set(
     url('../img/poster-xl@4x.webp') 4x,
     url('../img/poster-xl@4x.jpg') 4x
     );
+    max-width: 2560px;
+    margin: 0 auto;
   }
 
   &__container {
@@ -74,6 +74,7 @@
     color: $back;
     margin-bottom: 24px;
 
+
     @include lg {
       font-size: 52px;
       margin-bottom: 40px;
@@ -85,6 +86,7 @@
     line-height: 1;
     text-transform: uppercase;
     color: $second;
+
 
     @include lg {
       font-size: 40px;
