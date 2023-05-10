@@ -123,13 +123,14 @@ iframe {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 10px 20px;
+  padding: 9px 19px;
   font-weight: 1000;
   font-size: 16px;
   line-height: 1;
   color: $back;
   background: $second;
   border-radius: 80px;
+  border: 2px solid $second;
 
   &:after {
     content: '';
@@ -140,11 +141,30 @@ iframe {
   }
 
   @include lg {
-    padding: 17px 32px;
+    padding: 15px 31px;
     font-size: 20px;
     gap: 10px;
   }
 }
+
+.link-main:hover {
+  color: $main;
+
+  &:after {
+    background: url('../img/arrow-right-black.svg') center/contain no-repeat;
+
+  }
+}
+
+.link-main:focus {
+  color: $back;
+  border: 2px solid #000000;
+
+  &:after {
+    background: url('../img/arrow-right.svg') center/contain no-repeat;
+  }
+}
+
 
 .swiper-pagination-bullet {
   width: 10px;
