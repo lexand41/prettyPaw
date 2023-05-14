@@ -18,19 +18,17 @@ export const menuControl = () => {
   });
 
   const openMenu = () => {
-    navigationButton.classList.add('navigation__button_active');
     tl.play();
+    navigationButton.classList.add('navigation__button_active');
+    
   };
 
   const closeMenu = () => {
-    tl.reverse()
+    navigationButton.classList.remove('navigation__button_active');
+    tl.reverse();
   };
 
-  tl.eventCallback('onReverseComplete', () => {
-    navigationButton.classList.remove('navigation__button_active');
-  });
-
-  
+  // tl.eventCallback('onReverseComplete', () => { });
 
   navigationButton.addEventListener('click', () => {
     if (navigationButton.classList.contains('navigation__button_active')) {
