@@ -1,4 +1,5 @@
 import './index.html';
+import './page.html';
 // new modules
 import 'swiper/scss';
 import 'swiper/scss/pagination'
@@ -6,15 +7,26 @@ import './index.scss';
 import { slidersInit } from './modules/sliders';
 import { videoBackgroundInit } from './modules/videoBackground';
 import { menuControl } from './modules/menuControl';
+import { locationHover } from './modules/locationHover';
+import { initScrollTopButton } from './modules/scrollTopButton';
+import { pageControlInit } from './modules/pageControl';
 
 
 // use modules
 videoBackgroundInit();
 menuControl();
+locationHover();
+initScrollTopButton('arrow-top', {
+  hover: true,
+});
+pageControlInit();
+
+
 
 slidersInit('.about__slider', {
   pagination: {
-    el: '.about__slider-pagination'
+    el: '.about__slider-pagination',
+    enabled: true,
   }
 });
 
@@ -26,28 +38,37 @@ careerImageItems.forEach((item , i ) => {
 
 slidersInit('.career__slider', {
   pagination: {
-    el: '.career__slider-pagination'
+    el: '.career__slider-pagination',
+    enabled: true,
   },
   breakpoints: {
     567: {
       slidesPerView: 'auto',
       spaceBetween: 20,
-      pagination: false,
+      pagination: {
+        enabled: false,
+      },
     },
     768: {
       slidesPerView: 'auto',
       spaceBetween: 20,
-      pagination: false,
+      pagination: {
+        enabled: false,
+      },
     },
     1024: {
       slidesPerView: 'auto',
       spaceBetween: 26,
-      pagination: false,
+      pagination: {
+        enabled: false,
+      },
     },
     1240: {
       slidesPerView: 'auto',
       spaceBetween: 30,
-      pagination: false,
+      pagination: {
+        enabled: false,
+      },
     }
   }
 });

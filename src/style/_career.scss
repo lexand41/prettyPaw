@@ -1,5 +1,5 @@
 .career {
-  // overflow: hidden;
+  overflow: hidden;
   padding-top: 80px;
   padding-bottom: 40px;
 
@@ -65,7 +65,13 @@
   }
 
   &__slider {
-    overflow: hidden;
+    @include xl {
+      overflow: visible;
+    }
+
+    @include xxl {
+      overflow: hidden;
+    }
   }
 
   &__image-list {
@@ -77,13 +83,7 @@
     align-items: center;
 
     @include sm {
-      &_odd {
-        width: 56%;
-      }
-    
-      &_even {
-        width: 40%;
-      }
+      width: 48%;
   }
 
     @include md {
@@ -116,9 +116,9 @@
     border-radius: 16px;
   }
 
-  &__slider-pagination {
-    @include sm {
-      display: none;
-    }
-  }
+  // &__slider-pagination {
+  //   @include sm {
+  //     display: none;
+  //   }
+  // }
 }
